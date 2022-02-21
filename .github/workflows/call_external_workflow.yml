@@ -1,0 +1,8 @@
+name: Call extenrnal workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  joking:
+    uses: h2floh/action-get-joke-of-the-day/.github/workflows/reusable.yml@main
