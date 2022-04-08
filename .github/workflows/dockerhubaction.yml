@@ -1,0 +1,17 @@
+name: Docker Hub action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  alpine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Oh my alpine
+        uses: docker://alpine:3.8
+
+  busybox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: BusyBusyBusyBox
+        uses: docker://busybox:latest
