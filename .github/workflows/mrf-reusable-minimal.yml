@@ -1,0 +1,18 @@
+# MRF (Matrix for Reusable Workflows)
+# Contains only one job and uses
+name: MRF Reusable Minimal One Job
+
+on:
+  workflow_call:
+    inputs:
+      runson:
+        type: string
+      env:
+        type: string
+
+jobs:
+  printenv:
+    runs-on: ${{ inputs.runson }}
+    steps:
+    - name: Print Environment input
+      run: echo ${{ inputs.env }}
