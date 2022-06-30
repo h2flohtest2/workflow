@@ -1,6 +1,6 @@
 # MRF (Matrix for Reusable Workflows)
 #  Represents the minimal case:
-#  - one job in reusable workflow
+#  - one job in reusable workflow   
 name: MRF Scenario Minimal
 
 on:
